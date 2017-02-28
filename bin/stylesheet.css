@@ -1,0 +1,780 @@
+/*
+               ______________________________
+              |==============================|
+              |            PROJECT           |
+              |==============================|
+              |$                            $|
+              |$         EEMI BATTLE        $|
+              |$                            $|
+              |==============================|
+              |          FILES-INFO          |
+              |==============================|
+              |    author : Julien Lachaux   |
+              |             Noelie Roux      |
+              |      date : 10/11/2016       |
+              |      type : CSS              |
+              |      name : stylesheet       |
+              |==============================|
+              |           CONTACT            |
+              |   julien.lachaux@eemi.com    |
+              |     noelie.roux@eemi.com     |
+              |______________________________|
+                 __________________________
+                |                          |
+                |          REQUIRED        |
+                |__________________________|
+
+            1 - .infographie before all alement
+            2 - id not allowed
+            3 - comment all new element
+            4 - comment all critical decision in french and english
+            5 - use the same design for comment
+            6 - comment and class name in english
+
+                 __________________________
+                |                          |
+                |         SOMMAIRE         |
+                |__________________________| 
+                |                          | 
+                |   1 - pages              |
+                |   2 - texts              |
+                |   3 - colors             |
+                |   4 - cubes              |
+                |   5 - barre_centrale     |
+                |   6 - bulles             |
+                |   7 - specialites        |
+                |   8 - annee 2            |
+                |   9 - annee 3            |
+                |                          |
+                |__________________________|
+*/
+
+
+/*
+                 __________________________
+                |                          |
+                |           PAGES          |
+                |__________________________| 
+*/
+
+    /* doc */
+
+.infographie {
+    width: 960px;
+    margin: auto;
+}
+
+.infographie .row {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+    /* pointille */
+    
+.infographie .pointille {
+    display: inline-block;
+    border-bottom: 2px dotted #b7c1dc;
+	position: relative;
+}
+
+.infographie .central-deco {
+	display: inline-block;
+}
+
+/* grid */
+
+.infographie .col-1, .infographie .col-2, .infographie .col-3, .infographie .col-4, .infographie .col-5, .infographie .col-6, .infographie .col-7, .infographie .col-8, .infographie .col-9, .infographie .col-10, .infographie .col-11, .infographie .col-12 {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.infographie .col-1 {
+    width: calc( 1 / 12 * 100% - 2%);
+}
+.infographie .col-2 {
+    width: calc( 2 / 12 * 100% - 2%);
+}
+.infographie .col-3 {
+    width: calc( 3 / 12 * 100% - 2%);
+}
+.infographie .col-4 {
+    width: calc( 4 / 12 * 100% - 2%);
+}
+.infographie .col-5 {
+    width: calc( 5 / 12 * 100% - 2%);
+}
+.infographie .col-6 {
+    width: calc( 6 / 12 * 100% - 2%);
+}
+.infographie .col-7 {
+    width: calc( 7 / 12 * 100% - 2%);
+}
+.infographie .col-8 {
+    width: calc( 8 / 12 * 100% - 2%);
+}
+.infographie .col-9 {
+    width: calc( 9 / 12 * 100% - 2%);
+}
+.infographie .col-10 {
+    width: calc( 10 / 12 * 100% - 2%);
+}
+.infographie .col-11 {
+    width: calc( 11 / 12 * 100% - 2%);
+}
+.infographie .col-12 {
+    width: calc( 12 / 12 * 100% - 2%);
+}
+
+/*offset-grid*/
+
+.infographie .col-offset-1 {
+    margin-left: calc( 1 / 12 * 100%);
+}
+.infographie .col-offset-2 {
+    margin-left: calc( 2 / 12 * 100%);
+}
+.infographie .col-offset-3 {
+    margin-left: calc( 3 / 12 * 100%);
+}
+.infographie .col-offset-4 {
+    margin-left: calc( 4 / 12 * 100%);
+}
+
+.infographie .col-offset-5 {
+    margin-left: calc( 5 / 12 * 100%);
+}
+
+.infographie .col-offset-6 {
+    margin-left: calc( 6 / 12 * 100%);
+}
+
+    /* content */
+
+.infographie .contenu {
+	color: black;
+	width: 100px;
+    font-size: 24px;
+	margin: 0px;
+    padding: 0px;
+    font-family: "BigNoodleTitling";
+}
+
+.infographie .contenu span.subContent {
+    font-size: 20px;
+    color: #AFAFAF
+}
+
+.infographie .cube img {
+	position: relative;
+	width: 70%;
+	margin: 26px 10px;
+}
+
+.infographie .projet-final .cube img, .infographie .stage .cube img {
+	position: relative;
+	width: 70%;
+	margin: 40px 10px;
+}
+
+.infographie .contenu2 {
+	margin: 0px;
+    font-size: 9.5pt;
+    font-family: 'Roboto', sans-serif;
+	overflow:hidden;
+}
+
+.infographie .contenucube {
+	margin: 30px 10px 0px 10px;
+    text-align: center;
+    font-size: 20pt;
+    padding: 5px;
+    font-family: "BigNoodleTitling";
+}
+.infographie .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+    margin: 0px;
+    font-family: "BigNoodleTitling";
+    color: #456284;
+}
+
+.infographie .subtitle {
+    text-align: center;
+    font-size: 2em;
+    margin: 15px 0 50px 0;
+    font-family: "BigNoodleTitling";
+    color: #b7c1dc;
+}
+
+.infographie .subtitle span {
+    color: #8598c3;
+}
+.infographie .footerEEMI {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 45px 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #b7c1dc;
+}
+
+.infographie .footerEEMI a {
+    text-decoration: none;
+    color: #8598c3;
+}
+
+.infographie .footerEEMI a:hover {
+    color: #456284;
+}
+
+.infographie .footerEEMI .copyright{
+    color: #8598c3;
+}
+
+.infographie .uppercase {
+    text-transform: uppercase;
+}
+
+/*
+                ____________________________
+                |                          |
+                |           TEXTS          |
+                |__________________________| 
+*/
+    /* font-face */
+
+@font-face {
+    font-family: "BigNoodleTitling";
+    src: url('font/big_noodle_titling.ttf');
+}
+
+    
+    /* font-color */
+
+.infographie .font-white { color: #FFFFFF !important;}
+.infographie .font-grey { color: #b7c1dc !important;}
+.infographie .font-blue-grey { color: #8598c3 !important;}
+    
+    /* font-placement */
+
+/*
+                ____________________________
+                |                          |
+                |           COLORS         |
+                |__________________________| 
+*/
+
+    /* pinks */
+    
+.infographie .pink { background: #EA5197 !important}
+.infographie .light-pink { background: #f187b7 !important}
+.infographie .dark-pink { background: #e6007e !important}
+
+    /* oranges */
+    
+.infographie .orange { background: #EF7E3C !important}
+.infographie .light-orange { background: #f5a26c !important}
+.infographie .dark-orange { background: #ea5b0c !important}
+
+    /* blues */
+    
+.infographie .blue { background: #5B89C7 !important}
+.infographie .light-blue { background: #89a5d7 !important}
+.infographie .dark-blue { background: #0f71b8 !important}
+
+    /* greys */
+    
+.infographie .grey { background: #b7c1dc !important}
+.infographie .light-grey { background: #e8ebf2 !important}
+.infographie .dark-grey { background: #557aae !important}
+.infographie .blue-grey { background: #8598c3 !important}
+.infographie .light-blue-grey { background: #d7e3f3 !important}
+.infographie .dark-blue-grey { background: #456284 !important}
+
+    /* white */
+
+.infographie .white { background: white !important;}
+.infographie .black { background: black !important;}
+
+/*
+                ____________________________
+                |                          |
+                |           CUBES          |
+                |__________________________| 
+*/
+/*
+    /* the cube */
+    
+.infographie .cube {
+    width : inherit;
+    height : 100px;
+    display: inline-block;
+	position: relative;
+	transition-timing-function: linear;
+    color: #AFAFAF;
+}
+
+.infographie .cube div {
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    background-color:white;
+	border: 1px #AFAFAF solid;
+}
+
+.infographie .cube .face {
+    transform-origin : top left;
+    transform : skewY(15deg);
+    z-index : 3;
+}
+
+.infographie .cube .right {
+    transform-origin : top right;
+    transform : skewY(-15deg);
+    margin-left: 70px;
+    z-index : 3;
+}
+    
+
+.infographie .cube .left {
+    transform-origin :top left;
+    transform : skewY(-15deg);
+    z-index : 1;
+}
+    
+
+.infographie .cube .back {
+    transform-origin : top right;
+    transform : skewY(15deg);
+    margin-left: 70px;
+    z-index : 1;
+}
+
+/*
+                ____________________________
+                |                          |
+                |       BARRE-CENTRALE     |
+                |__________________________| 
+*/
+
+.infographie .central-bar {
+    width: 35px;
+    height: 650px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 446px;
+    margin-top: -10px;
+}
+
+.infographie .central-bar div {
+    width: 35px;
+    height: 610px;
+    position: absolute;
+	border: 1px #AFAFAF solid;
+	background: white;
+}
+
+.infographie .central-bar .face {
+    transform-origin : top left;
+    transform : skewY(15deg);
+}
+
+.infographie .central-bar .right {
+    transform-origin : top right;
+    transform : skewY(-15deg);
+    margin-left: 100%;
+}
+
+.infographie .central-bar .back {
+    transform-origin : top right;
+    transform : skewY(15deg);
+    margin-left: 100%;
+}
+
+.infographie .central-bar .left {
+    transform-origin :top left;
+    transform : skewY(-15deg);
+}
+
+/*
+                ____________________________
+                |                          |
+                |           BUBBLE         |
+                |__________________________| 
+*/
+
+    /* bulle-default */
+
+.infographie .bubble {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+    height: 100px;
+	overflow: hidden;
+}
+
+.infographie .bubble-content {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.infographie .bubble-content img {
+	height: 50px;
+	margin: 0px;
+	padding: 0px 10px 2.5px 0px;
+}
+.infographie .left .bubble-content p {
+	width: 75%;
+}
+.infographie .right .bubble-content p {
+	margin-left: 10px;
+}
+
+.infographie .bubble-stick {
+    width: 10px;
+    position: relative;
+	display: inline-block;
+}
+
+.infographie .bubble-stick {
+	height: 75px;
+}
+
+.infographie .bubble-stick {
+	height: 100%;
+}
+
+/*
+                ____________________________
+                |                          |
+                |        SPECIALITES       |
+                |          ANNEE 1         |
+                |__________________________| 
+*/
+
+	/* la class pour les animations des cubes */
+
+.infographie .animation-grey {
+	border: 1px solid #8598c3 !important;
+}
+.infographie .animation-pink {
+	border: 1px solid #EA5197 !important;
+}
+.infographie .animation-blue {
+	border: 1px solid #5B89C7 !important;
+}
+.infographie .animation-orange {
+	border: 1px solid #EF7E3C !important;
+}
+.infographie .animation-spe {
+	border: 1px solid #456284 !important;
+}
+
+	/* les class et les keyframes des animations de chargement */
+
+	/* bubble */
+@keyframes animBubbleLeft {
+	0% {opacity: 0; transform: translateX(350px);}
+	50% {opacity: 0; transform: translateX(350px);}
+	100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes animBubbleRight {
+	0% {opacity: 0; transform: translateX(-250px);}
+	50% {opacity: 0; transform: translateX(-250px);}
+	100% {opacity: 1; transform: translateX(0);}
+}
+
+.animBubbleLeft {
+	animation-name: animBubbleLeft;
+	animation-duration: 5s;
+}
+
+.animBubbleRight {
+	animation-name: animBubbleRight;
+	animation-duration: 5s;
+}
+
+	/* pointille */
+
+@keyframes animPointLeft {
+	0% {opacity: 0; transform: translateX(250px);}
+	50% {opacity: 0; transform: translateX(250px);}
+	100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes animPointRight {
+	0% {opacity: 0; transform: translateX(-250px);}
+	50% {opacity: 0; transform: translateX(-250px);}
+	100% {opacity: 1; transform: translateX(0);}
+}
+
+.infographie .animPointLeft {
+	animation-name: animPointLeft;
+	animation-duration: 6s;
+}
+
+.infographie .animPointRight {
+	animation-name: animPointRight;
+	animation-duration: 6s;
+}
+
+	/* cube */
+
+@keyframes animCube1 {
+	from {
+        transform: skewY(15deg) translateY(-1100px);
+        opacity: 0;
+    }
+	to {
+        transform: skewY(15deg) translateY(0px);
+        opacity: 1;
+    }
+}
+
+.infographie .animCube1 {
+	animation-name: animCube1;
+	animation-duration: 3s;
+}
+
+@keyframes animCube2 {
+	from {
+        transform: skewY(-15deg) translateY(-1100px);
+        opacity: 0;
+    }
+	to {
+        transform: skewY(-15deg) translateY(0px);
+        opacity: 1;
+    }
+}
+
+.infographie .animCube2 {
+	animation-name: animCube2;
+	animation-duration: 3s;
+}
+
+.infographie .spe {
+	border-bottom: none !important;
+}
+		/* projet final */
+.infographie .projet-final .central-bar div {
+    height: 193px;
+}
+
+.infographie .projet-final .central-bar {
+    height: 193px;
+    margin-left: 36px;
+    margin-top: -35px;
+}
+.infographie .projet-final .cube div {
+    height: 125px;
+}
+
+    /* stage */
+
+.infographie .stage .central-bar div {
+    height: 193px;
+}
+.infographie .stage .central-bar {
+    height: 193px;
+    margin-left: 36px;
+    margin-top: -35px;
+}
+.infographie .stage .cube div {
+    height: 125px;
+}
+/*
+                ____________________________
+                |                          |
+                |        RESPONSIVE        |
+                |          DESIGN          |
+                |__________________________| 
+*/
+
+@media screen and (max-width: 960px) {
+    
+    
+	.infographie .row {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: space-around;
+		height: 400px !important;
+		padding-top: 0px;
+		padding-bottom: 5px;
+	}
+	
+	.infographie .bubble{
+		margin-left: 25px;
+		order: 2;
+	}
+	.infographie .right .bubble-stick {
+		height: 160px;
+		margin: -90px 0px 0px 0px;
+	}
+	
+	.infographie .cube {
+		padding-top: 25px;
+	}
+	
+	.infographie .central-bar {
+		height: 100%;
+		margin: 35px 0px 20px 46px;
+	}
+	.infographie .central-bar div {
+		height: 835px;
+	}
+	.infographie .pointille {
+		display: none !important;
+	}
+	.infographie .projet-final .central-bar div {
+		height: 212px;
+	}
+	.infographie .stage .central-bar div {
+		height: 212px;
+	}
+    
+    .infographie .hidden-mobile {
+        display: none !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .infographie .row{
+        width: 100%;
+        height: 500px;
+    }
+    .infographie {
+        width: 100%;
+        margin: 0px;
+    }
+    .infographie .title {
+        font-size: 2em;
+    }
+    .infographie .subtitle {
+        width: 100%;
+        font-size: 1em;
+    }
+    
+    .infographie .cube {
+        padding-left: 25%;
+        margin-bottom: 50px;
+    }
+    
+    .infographie .col-1, .infographie .col-2, .infographie .col-3, .infographie .col-4, .infographie .col-5, .infographie .col-6, .infographie .col-7, .infographie .col-8, .infographie .col-9, .infographie .col-10, .infographie .col-11, .infographie .col-12 {
+        width: 80% !important;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+	
+}
+@media screen and (min-width: 960px) {
+	.infographie .projet-final {
+		height: 110px;
+		margin-top: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.infographie .stage {
+		height: 110px;
+		margin-top: 10px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+/* annee 2 */
+
+.annee2 .marketing .cube div{
+    height: 410px;
+}
+.annee2 .marketing .central-deco{
+    margin: 0 30px 0 50px;
+}
+
+.annee2 .central-bar {
+    margin-left: 285px;
+    margin-top: -10px;
+}
+
+.annee2 .projet-final {
+    margin-top: 40px;
+}
+
+.annee2 .general .central-deco, .annee2 .projet-final .central-deco, .annee2 .stage .central-deco{
+    margin: 0 50px;
+}
+.annee2 .general .pointille, .annee2 .projet-final .pointille, .annee2 .stage .pointille{
+    margin: 0 50px;
+}
+
+.annee2 .plus {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 70px 0 0 440px;
+    padding: 5px 0 0 0;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'roboto', 'sans-serif'
+}
+
+.annee2 .marketing .contenucube{
+    margin-top: 160px;
+}
+
+.annee2 .marketing .cube img{
+    margin-top: 160px;
+}
+
+/* responsive */
+
+@media all and (max-width: 960px) {
+    .annee2 .design .plus {
+        margin: 140px 0 0 -60px;
+    }
+    .annee2 .marketing .plus {
+        margin: 220px 0 0 -60px;
+    }
+    
+    .annee2 .marketing .cube {
+        margin-left: -89px;
+        padding-top: 0px;
+    }
+    .annee2 .marketing .cube div {
+        height: 100px;
+    }
+    
+    .annee2 .marketing .contenucube {
+        margin-top: 25px;
+    }
+    
+    .annee2 .marketing .cube img {
+        margin-top: 25px;
+    }
+    
+    .annee2 .design, .annee2 .development {
+        height: 300px !important;
+    }
+    
+    .annee2 .projet-final {
+        margin-top: 0px;
+    }
+    
+}
